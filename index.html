@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Color Picker</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div id='masterContainer'>
+<h1 id='title'>Color Picker</h1>
+<div id="slAndBoxWrap">
+<div id='dude'>
+<label for"slider1">R:</label>
+  <input id='slider1' type='range' min='0' max='255' step='1' name='slider1' value=''><br><br>
+
+  <label for"slider2">G:<label>
+  <input id='slider2' type='range' min='0' max='255' step='1' name='slider2'><br><br>
+
+    <label for"slider3">B:</label>
+    <input id='slider3' type='range' min='0' max='255' step='1' name='slider3'><br><br>
+
+    <label for"slider4">A:</label>
+    <input id='slider4' type='range' min='0' max='1' step='0.1' name='slider4' value='1'><br><br>                                             
+</div>
+
+<div id='box'style='border:1px solid black; width:255px;height:200px;'></div>
+</div>
+  
+  <div id='textAndButton1Wrap'>
+  <h1 id='text'></h1>
+  <button id='button1' onclick='copyToClipboard(document.getElementById("text").innerHTML)'>Click to Copy</button>
+  </div>
+  
+  <div id='alphaAndAlphaLabelWrap'>
+  <h3 id='alphaLabel'>Alpha Channels:</h3>
+    <div id='alphaContainer'>
+  <div id='alpha1'class='alphas'></div>
+  <div id='alpha2'class='alphas'></div>
+  <div id='alpha3'class='alphas'></div>
+  <div id='alpha4'class='alphas'></div>
+  <div id='alpha5'class='alphas'></div>
+  <div id='alpha6'class='alphas'></div>
+  <div id='alpha7'class='alphas'></div>
+  <div id='alpha8'class='alphas'></div>
+  <div id='alpha9'class='alphas'></div>
+  <div id='alpha10'class='alphas'></div>
+</div></div><br>
+      
+  <div id='benPalsWrap'>
+    <h3 id='benPalTitle'>Ben Palette:</h3>
+    <button id='showCodes' onclick='showCodes()'>RGBA Codes</button>
+    <div id='benPals'>
+  <div class='flex-row'><div id='benPal1'class='benPals'></div><h3 class='bpc'>Base Color</h3></div>
+  <div class='flex-row'><div id='benPal2'class='benPals'></div><h3 class='bpc' id='benPal2Code'></h3></div>
+  <div class='flex-row'><div id='benPal3'class='benPals'></div><h3 class='bpc' id='benPal3Code'></h3></div>
+  <div class='flex-row'><div id='benPal4'class='benPals'></div><h3 class='bpc' id='benPal4Code'></h3></div>
+  <div class='flex-row'><div id='benPal5'class='benPals'></div><h3 class='bpc' id='benPal5Code'></h3></div>
+  <div class='flex-row'><div id='benPal6'class='benPals'></div><h3 class='bpc' id='benPal6Code'></h3></div>
+  <div class='flex-row'><div id='benPal7'class='benPals'></div><h3 class='bpc' id='benPal7Code'></h3></div>
+</div>
+    </div>
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/4Hc_8fJn1d4" frameborder="0" allowfullscreen></iframe>
+    
+  
+  <footer>Page Design by Ben.Jam(In);</footer>
+  </div>
+  
+    <script src="js/index.js"></script>
+
+</body>
+</html>
